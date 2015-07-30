@@ -1,0 +1,50 @@
+/* @HEADER */
+.header{
+  position: relative;
+  text-align: right;
+  background: #2D303A;
+}
+  /* @LOGO */
+.header_logo{
+  position: absolute;
+  top: 30px;
+  left: 10px;
+
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header_logo span{
+  color: #f06c64;
+}
+  /* @NAVIGATION */
+.navigation{
+  display: inline-block;
+  margin-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+}
+.navigation ul{
+  text-transform: uppercase;
+  list-style-type: none;
+}
+.navigation li{
+  display: inline-block;
+  margin-right: 14px;
+  color: #fff;
+}
+.navigation li > span{
+  margin-left: 10px;
+  color: #494e62;
+}
+.navigation a {
+  text-decoration: none;
+  color: inherit;
+  transition:color 0.5s;
+}
+.navigation a:hover{
+  color: #f06c64;
+}
