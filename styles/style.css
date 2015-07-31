@@ -241,3 +241,59 @@
 .portofolio_gallery > div:nth-child(4n+1){
   padding-left: 0px;
 }
+
+/* @ABOUT US */
+.about{
+  padding: 70px 0px;
+  background-color: #f2f2f2;
+  color:#767e9e;
+}
+.about_title{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+}
+.about_title h1{
+  margin-top: 0px;
+  margin-bottom: 35px;
+  font-size: 29px;
+  font-weight: 900;
+  line-height: 4px;
+  text-align: justify;
+}
+.about_person{
+  display: inline-block;
+  max-width: 32%;
+  margin-top: 20px;
+  margin-right:13px;
+}
+.about_person:nth-child(n+4){
+  margin-right:0px;
+}
+.about_person h3{
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 4px;
+  text-align: justify;
+}
+.about_person p{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: justify;
+}
+.about_contact{
+  margin-top: 15px;
+}
+.about_contact div{
+  display: inline-block;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid #767e9e;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  cursor: pointer;
+}
