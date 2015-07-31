@@ -5,7 +5,7 @@ $(document).ready(function() {
     });
 
     window.addEventListener('resize', function(event){
-    if($(window).width()>700){
+    if($(window).width()>900){
     $('.navigation ul').css('display','inline-block')
     }
     else $('.navigation ul').css('display','none')
