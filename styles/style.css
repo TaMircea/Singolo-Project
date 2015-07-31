@@ -1,7 +1,11 @@
 *{
+  font-family: Lato;
   vertical-align: top;
 }
-
+.midpage{
+  width: 960px;
+  margin: 0px auto;
+}
 
 /* @HEADER */
 .header{
@@ -13,7 +17,6 @@
 .header_logo{
   vertical-align: bottom;
   display: inline-block;
-  
   margin: 0px 0px 0px 13px;
   padding: 20px 0px;
   font-size: 25px;
@@ -31,7 +34,6 @@
   margin-right: 30px;
   padding-top: 8px;
   padding-bottom: 15px;
-
 }
 .navigation ul{
   text-transform: uppercase;
@@ -61,56 +63,52 @@
   background: #2D303A;
   cursor: pointer;
 }
-@media screen and (min-width: 701px){
-.navigation ul{
-  display: inline-block;
-}
-}
-@media screen and (max-width: 700px) {
-
-.navigation_responsive{
-  display: inline-block;
-  margin: 20px 20px 20px 0px;
-  text-align: center;
-}
-.navigation ul {
-  display:none;
-  padding: 5px 15px;
-
-  position: relative;
-  top: 32px;
-  right: -29px;
-  width:100%;
-  box-shadow:0px 1px 1px rgba(0,0,0,0.15);
-  border-radius:4px;
-  text-align: right;
-  background: #2D3045;
-}
-.navigation ul:after {
-  width:0px;
-  height:0px;
-  position:absolute;
-  top:0%;
-  right:7px;
-  content:'';
-  transform:translate(0%, -100%);
-  border-left:7px solid transparent;
-  border-right:7px solid transparent;
-  border-bottom:7px solid #2D3045;
-}
-.navigation li > span{
-  display: none;
-}
-.navigation li{
-  display: block;
-  margin-bottom: 15px;
-  margin-right: 0;
+@media screen and (max-width: 950px) {
+  .header .midpage{
+    width: auto;
+    margin:0;
   }
-
-.navigation_responsive:hover, .navigation_responsive.active {
-        text-decoration:none;
-        color:#f06c64;
-        background: #2D202A;
+  .navigation_responsive{
+    display: inline-block;
+    margin: 20px 20px 20px 0px;
+    text-align: center;
+  }
+  .navigation ul {
+    display:none;
+    padding: 5px 15px;
+    position: relative;
+    top: 32px;
+    right: -29px;
+    width:100%;
+    box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+    border-radius:4px;
+    text-align: right;
+    background: #2D3045;
+  }
+  .navigation ul:after {
+    width:0px;
+    height:0px;
+    position:absolute;
+    top:0%;
+    right:7px;
+    content:'';
+    transform:translate(0%, -100%);
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-bottom:7px solid #2D3045;
+  }
+  .navigation li > span{
+    display: none;
+  }
+  .navigation li{
+    display: block;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .navigation_responsive:hover, .navigation_responsive.active {
+          text-decoration:none;
+          color:#f06c64;
+          background: #2D202A;
   }
 }
 /* @SLIDESHOW */
@@ -124,44 +122,82 @@
   background: red;
   transition:background-color 1000ms linear;
 }
-
 .slideshow_slide{
   position: relative;
   display:inline-block;
   text-align: center;
-
 }
-
-
-.btn-next, .btn-prev
-{
+.btn-next, .btn-prev{
     display: none;
     position:absolute;
     top:250px;
     cursor:pointer;
     z-index: 200;
-  }
-
-  .slideshow:hover .btn-prev{
+}
+.slideshow:hover .btn-prev{
     display: block;
     left:10px;
-
-  }
-  .slideshow:hover .btn-next{
+}
+.slideshow:hover .btn-next{
     display: block;
     right:10px;
-
-  }
-
+}
 .slideshow_banner{
   padding: 10px;
     width: 100%;
     height: 100%;
-  }
-
-
-
-
+}
+/* @SERVICES PAGE */
+.services{
+  padding: 50px 0px;
+  background-color: #f2f2f2;
+}
+.services_title{
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 30px;
+  color: #666d89;
+}
+.services_intro{
+  margin-top: 33px;
+  color:#767e9e;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+}
+/* @TEXT BOX */
+.text-box{
+  display: inline-block;
+  margin-top: 33px;
+  max-width: 32%;
+  width: 100%;
+}
+.text-box_image{
+  float: left;
+  padding: 10px;
+  margin:0px 0px 43px 0px;
+  border-radius: 100%;
+  border: 2px solid #666d89;
+  width: 30px;
+  text-align: center;
+}
+.text-box_content{
+  margin-left: 70px;
+  width: 220px;
+  color: #666d89; 
+}
+.text-box_content h2{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+.text-box_content p{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: justify;
+}
 
 
 
