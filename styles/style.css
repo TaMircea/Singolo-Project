@@ -192,6 +192,7 @@
   padding: 70px 0px;
   background-color: #f2f2f2;
   color:#767e9e;
+  overflow: hidden;
 }
 .about_person{
   display: inline-block;
@@ -445,4 +446,17 @@
   .portofolio_gallery{
     text-align: center;
   }
+  .text-box:nth-child(n+1){
+    margin-left:2%; 
+  }
+}
+@media all and (max-width: 290px) {
+  .text-box_content{
+    width: 200px;
+  }
+  .navigation ul {
+    right: 5px;
+  }
+  .portofolio_chooser > div {
+    margin-right: 1%;
 }
