@@ -145,24 +145,23 @@
   width: 100%;
   height: 100%;
 }
-/* @SERVICES PAGE */
-.services{
-  padding: 50px 0px;
-  background-color: #f2f2f2;
-}
-.services_title{
+/* @PAGE TITLE */
+.page_title h1{
   margin-top: 0;
   font-weight: 900;
   font-size: 30px;
-  color: #666d89;
 }
-.services_intro{
-  margin-top: 33px;
-  color:#767e9e;
+.page_title p{
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
   text-align: justify;
+}
+/* @SERVICES PAGE */
+.services{
+  padding: 50px 0px;
+  background-color: #f2f2f2;
+  color: #666d89;
 }
 /* @TEXT BOX */
 .text-box{
@@ -202,20 +201,6 @@
   background-color: #2d303a;
   color:#666d89;
 }
-.portofolio h1{
-  margin-top: 0px;
-  margin-bottom: 35px;
-  font-size: 29px;
-  font-weight: 900;
-  line-height: 4px;
-  text-align: justify;
-}
-.portofolio p{
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 30px;
-  text-align: justify;
-}
 .portofolio_chooser{
   margin-bottom: 10px;
   font-size: 12px;
@@ -244,20 +229,6 @@
   background-color: #f2f2f2;
   color:#767e9e;
 }
-.about_title{
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 30px;
-  text-align: justify;
-}
-.about_title h1{
-  margin-top: 0px;
-  margin-bottom: 35px;
-  font-size: 29px;
-  font-weight: 900;
-  line-height: 4px;
-  text-align: justify;
-}
 .about_person{
   display: inline-block;
   max-width: 32%;
@@ -279,10 +250,10 @@
   line-height: 21px;
   text-align: justify;
 }
-.about_contact{
+.socia-media{
   margin-top: 15px;
 }
-.about_contact div{
+.social-media div{
   display: inline-block;
   margin-right: 5px;
   padding: 5px;
@@ -298,19 +269,6 @@
   padding: 70px 0px;
   background-color: #f06c64;
   color:#f0d8d9;
-}
-.page-title{
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 30px;
-  text-align: justify;
-}
-.page-title h1{
-  margin-bottom: 50px;
-  font-size: 30px;
-  font-weight: 900;
-  line-height: 4.56px;
-  text-align: justify;
 }
 .contact_container{
   margin-top: 48px;
@@ -379,7 +337,7 @@
   font-weight: 400;
   text-align: justify;
 }
-.footer .about_contact{
+.footer .social-media{
   margin: 0;
   float: right;
 }
