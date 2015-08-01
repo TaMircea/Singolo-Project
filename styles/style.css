@@ -308,7 +308,7 @@
 /* @RESPONSIVE */
 @media all and (max-width: 1050px) {
   .page_title{
-    margin: 0% 3%;
+    margin: 0% 2%;
   }
   .text-box{
     max-width: 32%;
@@ -321,6 +321,12 @@
   }
   .about_person:nth-child(3n+2){
     margin-left: 3%;
+  }
+  .portofolio_chooser{
+    margin-left: 2%;
+  }
+  .portofolio_gallery{
+    padding-left:2%; 
   }
 }
 @media all and (max-width: 951px) {
@@ -389,7 +395,7 @@
   }
   .about_person:nth-child(3n+2) {
   margin-left: 0%;
-}
+  }
   /* RESPONSIVE OUR SERVICE */
   .text-box{
     max-width: 47%;
@@ -401,11 +407,13 @@
     margin-left: 3%;
     margin-right: 1%;
   }
-
-
-
-}
-@media all and (max-width: 712px) {
+  .portofolio_gallery > div{
+    margin-right: 4%;
+  }
+  .portofolio_gallery > div:nth-child(4n+1){
+    padding-left: 5px;
+  }
+@media all and (max-width: 720px) {
   .text-box{
     max-width: 50%;
     margin-left: 25%;
@@ -417,5 +425,24 @@
   .text-box:nth-child(3n+2){
     margin-left: 25%;
   }
+  .portofolio_gallery > div{
+    margin-right: 0%;
+  }
 
+}
+@media all and (max-width: 580px) {
+  .portofolio_gallery > div{
+    margin-right:7%;
+  }
+}
+@media all and (max-width: 480px) {
+  .portofolio_gallery > div{
+    margin-right:0%;
+  }
+
+}
+@media all and (max-width: 380px) {
+  .portofolio_gallery{
+    text-align: center;
+  }
 }
