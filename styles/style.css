@@ -215,6 +215,17 @@
   color: #666d89;
   border: 1px solid #666d89;
   border-radius: 5px;
+  transition:color 1s;
+}
+.portofolio_chooser .active{
+  border: 1px solid #FFF;
+  color: #FFF;
+
+}
+.portofolio_chooser > div:hover{
+  cursor: pointer;
+  border: 1px solid #FFF;
+  color: #FFF;
 }
 .portofolio_gallery > div{
   display: inline-block;
