@@ -366,3 +366,20 @@
   vertical-align: middle;
   margin-right: 10px;
 }
+/* @FOOTER  */
+.footer{
+  padding: 30px 0px;
+  background-color: #2d303a;
+}
+.footer span{
+  display: inline-block;
+  color: #494e62;
+
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
+}
+.footer .about_contact{
+  margin: 0;
+  float: right;
+}
