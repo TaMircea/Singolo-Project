@@ -128,17 +128,17 @@
 .btn-next, .btn-prev{
     display: none;
     position:absolute;
-    top:250px;
+    top:45%;
     cursor:pointer;
     z-index: 200;
 }
 .slideshow:hover .btn-prev{
     display: block;
-    left:10px;
+    left:10%;
 }
 .slideshow:hover .btn-next{
     display: block;
-    right:10px;
+    right:10%;
 }
 .slideshow_banner{
   padding: 10px;
