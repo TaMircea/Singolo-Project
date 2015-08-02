@@ -187,13 +187,11 @@
     </div>
     <div class="contact_container">
       <form class="contact_form"action="#">
-        <input type="text" name="name" placeholder="Name (Required)">
-        <br><br>
-        <input type="text" name="email" placeholder="Email (Required)">
-        <br><br>
+        <input type="text" name="name" placeholder="Name (Required)" required>
+        <input type="email" name="email" placeholder="Email (Required)" required>
         <input type="text" name="subject" placeholder="Subject">
-        <br><br>
         <textarea>Describe your project in detail...</textarea>
+        <input class = "contact_submit"type="submit" value="Send">
       </form>
       <div class="contact_info">
         <h3>Contact Information</h3>
