@@ -14,11 +14,11 @@ $(document).ready(function() {
       var colors = ["#74d600","#2e00c5","#899ca4","#116493","#6e00fd","#ff3c3c","#41e1d1","#fd9e0a"];
       var that=this;
       this.totalWidth=0;
-      function widthRefresher(){
-        this.width= $window.width(); 
-        console.log("Width refreshed" +width);
+      this.widthRefresher=function(){
+        that.width= $window.width(); 
+        console.log("Width refreshed" +that);
       };
-      widthRefresher();
+      this.widthRefresher();
       this.$slides.width(this.width);
       this.sliderInit();
       this.goNext=function(){
@@ -51,7 +51,18 @@ $(document).ready(function() {
         that.goPrev();
         that.backgroundChanger();
       });
+      window.addEventListener('resize', function(event){
+        that.widthRefresher();
+        that.$slideContainer.children().width(that.width);
+        that.setContainerWidth();
+        that.$slideContainer.css('margin-left',-that.width)
+    });
+
+
+
+
     };
+
     Slider.prototype.totalWidthCalc= function(){
       var that = this;
       that.totalWidth=0;
@@ -71,7 +82,7 @@ $(document).ready(function() {
       var that = this;      
       that.$slides.eq(0).clone().attr( 'id', 'Last' ).appendTo(that.$slideContainer);
       that.$slides.eq(-1).clone().attr( 'id', 'First' ).prependTo(that.$slideContainer);
-      that.$slideContainer.css('margin-left',-width);
+      that.$slideContainer.css('margin-left',-that.width);
       
       that.setContainerWidth();
     };
