@@ -365,10 +365,12 @@ textarea[type="text"]::-webkit-input-placeholder {
   }
 }
 @media all and (max-width: 985px) {
-  /*   @Resp-nav */
   .midpage{
     width: auto;
     margin:0;
+  }
+  .slideshow_container{
+    height: 25%;
   }
   .navigation_responsive{
     display: inline-block;
