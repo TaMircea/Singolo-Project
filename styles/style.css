@@ -122,6 +122,7 @@
   margin-top: 33px;
   max-width: 32%;
   width: 100%;
+  transition:all 1s;
 }
 .text-box_image{
   float: left;
@@ -183,6 +184,7 @@
 .portofolio_gallery > div{
   display: inline-block;
   padding: 3px 5px 8px 5px ;
+  transition:all 1s;
 }
 .portofolio_gallery > div:nth-child(4n+1){
   padding-left: 0px;
@@ -199,6 +201,7 @@
   max-width: 32%;
   margin-top: 20px;
   margin-right:13px;
+  transition:all 1s;
 }
 .about_person:nth-child(n+4){
   margin-right:0px;
@@ -361,7 +364,7 @@ textarea[type="text"]::-webkit-input-placeholder {
     margin-right:3%;
   }
 }
-@media all and (max-width: 951px) {
+@media all and (max-width: 985px) {
   /*   @Resp-nav */
   .midpage{
     width: auto;
