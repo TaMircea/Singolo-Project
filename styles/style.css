@@ -450,6 +450,9 @@ textarea[type="text"]::-webkit-input-placeholder {
   .portofolio_gallery > div:nth-child(4n+1){
     padding-left: 5px;
   }
+  .footer span{
+    margin-left: 2%;
+  }
 
 @media all and (max-width: 720px) {
   .text-box{
@@ -506,6 +509,12 @@ textarea[type="text"]::-webkit-input-placeholder {
   .text-box:nth-child(n+1){
     margin-left:2%; 
   }
+    .footer .midpage{
+    text-align: center;
+  }
+  .footer .social-media{
+    float: none;
+  }
 }
 @media all and (max-width: 290px) {
   .text-box_content{
@@ -516,4 +525,7 @@ textarea[type="text"]::-webkit-input-placeholder {
   }
   .portofolio_chooser > div {
     margin-right: 1%;
+  }
+
+
 }
