@@ -349,6 +349,12 @@ textarea[type="text"]::-webkit-input-placeholder {
   .portofolio_gallery{
     padding-left:2%; 
   }
+  .contact_container{
+    margin-left: 2%;
+  }
+  .contact_form{
+    margin-right:3%;
+  }
 }
 @media all and (max-width: 951px) {
   /*   @Resp-nav */
@@ -434,6 +440,7 @@ textarea[type="text"]::-webkit-input-placeholder {
   .portofolio_gallery > div:nth-child(4n+1){
     padding-left: 5px;
   }
+
 @media all and (max-width: 720px) {
   .text-box{
     max-width: 50%;
@@ -455,6 +462,18 @@ textarea[type="text"]::-webkit-input-placeholder {
   .portofolio_gallery > div{
     margin-right:7%;
   }
+  .contact_container{
+    text-align: center;
+
+  }
+  .contact_form{
+    width: 70%;
+    margin-bottom: 3%;
+  }
+  .contact_info {
+    width: 70%;
+  }
+
 }
 @media all and (max-width: 480px) {
   .portofolio_gallery > div{
