@@ -228,6 +228,10 @@
   height: 15px;
   text-align: center;
   cursor: pointer;
+  transition:background-color 0.5s;
+}
+.social-media div:hover{
+  background: #CCC;
 }
 /* @CONTACT PAGE */
 .contact{
@@ -271,6 +275,7 @@
   width: 17%;
   padding: 1%;
   color: #f1878a;
+  transition:background-color 1s;
 }
 .contact_form input[type="submit"]:hover {
   color: #9E3639;
@@ -456,6 +461,14 @@ textarea[type="text"]::-webkit-input-placeholder {
   .portofolio_gallery > div{
     margin-right: 0%;
   }
+  .slideshow:hover .btn-prev{
+    display: block;
+    left:6%;
+}
+.slideshow:hover .btn-next{
+    display: block;
+    right:6%;
+}
 
 }
 @media all and (max-width: 580px) {
