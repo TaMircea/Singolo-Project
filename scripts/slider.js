@@ -11,7 +11,6 @@ $(document).ready(function() {
       this.$btnNext=$('.btn-next',this.$slider);
       this.anim=1000;
       this.interval;
-      var colors = ["#74d600","#2e00c5","#899ca4","#116493","#6e00fd","#ff3c3c","#41e1d1","#fd9e0a"];
       var that=this;
       this.totalWidth=0;
       this.widthRefresher=function(){
@@ -40,9 +39,13 @@ $(document).ready(function() {
         });
       };
       this.backgroundChanger=function(){
-        var rand = Math.floor(Math.random()*colors.length);           
-        that.$slideContainer.css("background-color", colors[rand]);
-      }
+        var randColor = 'rgb(' + (Math.floor(Math.random() * 256))
+        + ',' + (Math.floor(Math.random() * 256)) 
+        + ',' + (Math.floor(Math.random() * 256)) + ')';
+                
+        that.$slideContainer.css("background-color", randColor);
+      };
+
       this.$btnNext.on('click',function(){
         that.goNext();
         that.backgroundChanger();
