@@ -202,6 +202,7 @@
   height: 100%;
   background: rgba(77,77,77,0.8);
   z-index: 100;
+  text-align: center;
 }
 .project-displayer_info{
   position: absolute;
@@ -214,9 +215,7 @@
   color: black;
 }
 .displayed{
-  width: 25%;
-  height: 25%;
-  margin: 25% auto;
+  margin: 8% auto;
 }
 .displayed img{
   position: relative;
