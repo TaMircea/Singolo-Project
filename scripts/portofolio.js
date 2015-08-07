@@ -29,7 +29,7 @@
         $(this).clone().appendTo($(displayer));
         $(displayer).css("display","block");
         $(displayer).children().eq(1).addClass('displayed');
-        $('<div class="project-displayer_info">'+info+'</div>').appendTo($(displayer));
+        $('<div class="project-displayer_info">'+info+'</div>').appendTo($(displayer).children().eq(1));
       });
     $(btnClose).click(function(){
       $(displayer).children().eq(1).remove();
