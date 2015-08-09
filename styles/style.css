@@ -156,14 +156,15 @@
   background-color: #2d303a;
   color:#666d89;
 }
-.portofolio_chooser{
+.filter-list{
+  display: inline-block;
   margin-bottom: 10px;
   font-size: 12px;
   font-weight: 400;
   line-height: 21px;
   text-align: justify
 }
-.portofolio_chooser > div{
+.filter-list > div{
   display: inline-block;
   margin-right: 10px;
   padding: 0px 6px;
@@ -173,27 +174,28 @@
   transition:color 1s;
   cursor: pointer;
 }
-.portofolio_chooser .active{
+.filter-list .active{
   border: 1px solid #FFF;
   color: #FFF;
 
 }
-.portofolio_chooser > div:hover{
+.filter-list > div:hover{
   cursor: pointer;
   border: 1px solid #FFF;
   color: #FFF;
 }
-.portofolio_gallery > div{
+.project{
   display: inline-block;
   padding: 3px 5px 8px 5px ;
   transition:margin 1s;
   cursor: pointer;
 }
-.portofolio_gallery > div:nth-child(4n+1){
+
+.project:nth-child(4n+1){
   padding-left: 0px;
 }
 
-.project_displayer{
+.displayer{
   display: none;
   position: absolute;
   top: 0px;
@@ -204,7 +206,7 @@
   z-index: 100;
   text-align: center;
 }
-.project-displayer_info{
+.displayer_info{
   padding: 1%;
   margin: 5% 23% 5% 23%;
   border-radius: 5px;

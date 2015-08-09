@@ -8,6 +8,89 @@
   <link href='styles/style.css' rel='stylesheet' type='text/css'>
   <link href='styles/normalize.css' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+      window.projects =[{
+        id: 1,
+        name: 'project1',
+        photo: 'lib/pictures/proj1.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Graphic-Design', 'Artwork']
+      }, {
+        id: 2,
+        name: 'product2',
+        photo: 'lib/pictures/proj2.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Graphic-Design']
+      }, {
+        id: 3,
+        name: 'product3',
+        photo: 'lib/pictures/proj3.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Graphic-Design']
+      }, {
+        id: 4,
+        name: 'product4',
+        photo: 'lib/pictures/proj4.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Artwork']
+        }, {
+        id: 5,
+        name: 'project5',
+        photo: 'lib/pictures/proj5.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Artwork', 'Web-Design']
+      }, {
+        id: 6,
+        name: 'product6',
+        photo: 'lib/pictures/proj6.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Artwork']
+      }, {
+        id: 7,
+        name: 'product7',
+        photo: 'lib/pictures/proj7.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Artwork']
+      }, {
+        id: 8,
+        name: 'product8',
+        photo: 'lib/pictures/proj8.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Web-Design']
+      },{
+        id: 9,
+        name: 'project9',
+        photo: 'lib/pictures/proj9.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Web-Design', 'Graphic-Design']
+      }, {
+        id: 10,
+        name: 'product10',
+        photo: 'lib/pictures/poj10.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Web-Design']
+      }, {
+        id: 11,
+        name: 'product11',
+        photo: 'lib/pictures/proj11.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Web-Design']
+      }, {
+        id: 12,
+        name: 'product12',
+        photo: 'lib/pictures/proj12.png',
+        info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus officia sequi, cum quae voluptate molestias odit explicabo fugiat consequuntur vel, quisquam placeat expedita autem, blanditiis eaque. Repellendus, qui, quaerat.",
+        categories: ['All','Web-Design']
+      }];
+    </script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/projectListing.js"></script>
+    <script src="scripts/FilterList.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/Displayer.js"></script>
+    <script src="scripts/DisplayerInfo.js"></script>
+
+
 </head>
 <body>
 <div class="header" id="top">
@@ -107,69 +190,15 @@
         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
       </p>
     </div>
-    <div class="portofolio_projects">
-      <span class="project_displayer">
-        <a class="close-button"></a>
-      </span>
-      <div class="portofolio_chooser">
-        <div class="all">All</div><!-- 
-     --><div class="web">Web Design</div><!-- 
-     --><div class="graphic">Graphic Design</div><!-- 
-     --><div class="artwork">Artwork</div>
+
+      <div class="displayer">
       </div>
 
-      <div class="portofolio_gallery">
-
-        <div class="project-web" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj1.png" alt="">
-        </div>
-
-        <div class="project-graphic" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj2.png" alt="">
-        </div>
-        
-        <div class="project-artwork" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj3.png" alt="">
-        </div>
-
-        <div class="project-web" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj4.png" alt="">
-        </div>
-
-        <div class="project-graphic" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj5.png" alt="">
-        </div>
-
-        <div class="project-artwork" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj6.png" alt="">
-        </div>
-
-        <div class="project-web" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj7.png" alt="">
-        </div>
-
-        <div class="project-graphic" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj8.png" alt="">
-        </div>
-
-        <div class="project-artwork" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj9.png" alt="">
-        </div>
-
-        <div class="project-web" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/poj10.png" alt="">
-        </div>
-
-        <div class="project-graphic" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj11.png" alt="">
-        </div>
-        
-        <div class="project-artwork" info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis nulla minima, enim harum nobis nostrum quos modi dolores consequuntur? Maiores modi placeat autem deleniti vero, porro corporis quos, labore incidunt?">
-          <img src="lib/pictures/proj12.png" alt="">
-        </div>
-
+      <div class="filter-list">
       </div>
-    </div>
+      <div class="gallery">
+      </div>
+
   </div>
 </div>
 <!-- @ABOUT US PAGE -->
@@ -260,7 +289,6 @@
 
   <script src="scripts/responsive.js"></script>
   <script src="scripts/slider.js"></script>
-  <script src="scripts/portofolio.js"></script>
   
 </body>
 </html>
