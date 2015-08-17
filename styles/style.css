@@ -122,6 +122,7 @@
   margin-top: 33px;
   max-width: 32%;
   width: 100%;
+  transition:all 1s;
 }
 .text-box_image{
   float: left;
@@ -150,18 +151,20 @@
 }
 /* @PORTOFOLIO */
 .portofolio{
+  position: relative;
   padding: 70px 0px;
   background-color: #2d303a;
   color:#666d89;
 }
-.portofolio_chooser{
+.filter-list{
+  display: inline-block;
   margin-bottom: 10px;
   font-size: 12px;
   font-weight: 400;
   line-height: 21px;
   text-align: justify
 }
-.portofolio_chooser > div{
+.filter-list > div{
   display: inline-block;
   margin-right: 10px;
   padding: 0px 6px;
@@ -169,23 +172,82 @@
   border: 1px solid #666d89;
   border-radius: 5px;
   transition:color 1s;
+  cursor: pointer;
 }
-.portofolio_chooser .active{
+.filter-list .active{
   border: 1px solid #FFF;
   color: #FFF;
 
 }
-.portofolio_chooser > div:hover{
+.filter-list > div:hover{
   cursor: pointer;
   border: 1px solid #FFF;
   color: #FFF;
 }
-.portofolio_gallery > div{
+.project{
   display: inline-block;
   padding: 3px 5px 8px 5px ;
+  transition:margin 1s;
+  cursor: pointer;
 }
-.portofolio_gallery > div:nth-child(4n+1){
+
+.project:nth-child(4n+1){
   padding-left: 0px;
+}
+
+.displayer{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(77,77,77,0.8);
+  z-index: 100;
+  text-align: center;
+}
+.displayer_info{
+  padding: 1%;
+  margin: 5% 23% 5% 23%;
+  border-radius: 5px;
+
+  max-width: 52%;
+
+  background: rgba(77,77,77,0.5);
+  color: white;
+}
+.displayed{
+  margin-top: 10%;
+  
+}
+.displayed img{
+  position: relative;
+  transform:scale(1.5,1.5);
+}
+
+.close-button{
+  margin: 0;
+  width: auto;
+  height: auto;
+
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  cursor:pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 30px;
+  background: #605F61;
+  font-size: 31px;
+  font-weight: bold;
+  line-height: 0px;
+  padding: 11px 3px; 
+  z-index: 300;
+}
+.close-button:before {
+    content: "×";
+
 }
 /* @ABOUT US */
 .about{
@@ -199,6 +261,7 @@
   max-width: 32%;
   margin-top: 20px;
   margin-right:13px;
+  transition:all 1s;
 }
 .about_person:nth-child(n+4){
   margin-right:0px;
@@ -361,11 +424,13 @@ textarea[type="text"]::-webkit-input-placeholder {
     margin-right:3%;
   }
 }
-@media all and (max-width: 951px) {
-  /*   @Resp-nav */
+@media all and (max-width: 985px) {
   .midpage{
     width: auto;
     margin:0;
+  }
+  .slideshow_container{
+    height: 25%;
   }
   .navigation_responsive{
     display: inline-block;
@@ -445,6 +510,9 @@ textarea[type="text"]::-webkit-input-placeholder {
   .portofolio_gallery > div:nth-child(4n+1){
     padding-left: 5px;
   }
+  .footer span{
+    margin-left: 2%;
+  }
 
 @media all and (max-width: 720px) {
   .text-box{
@@ -501,6 +569,12 @@ textarea[type="text"]::-webkit-input-placeholder {
   .text-box:nth-child(n+1){
     margin-left:2%; 
   }
+    .footer .midpage{
+    text-align: center;
+  }
+  .footer .social-media{
+    float: none;
+  }
 }
 @media all and (max-width: 290px) {
   .text-box_content{
@@ -511,4 +585,7 @@ textarea[type="text"]::-webkit-input-placeholder {
   }
   .portofolio_chooser > div {
     margin-right: 1%;
+  }
+
+
 }
