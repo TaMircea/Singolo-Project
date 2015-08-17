@@ -13,11 +13,11 @@
     this.displayed=$(event.target);
     this.displayed.clone().addClass('displayed').appendTo(this.el);
     this.createInfo();
-    this.el.show();
+    this.el.show('slow');
   }
   Displayer.prototype.closeDisplay = function(event) {
     this.el.children().remove();
-    this.el.hide();
+    this.el.hide('slow');
   }
 
   window.Displayer = Displayer;
